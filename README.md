@@ -1,4 +1,4 @@
-# nuxt-breaky
+# vue-breaky
 
 [![npm version][npm-version-src]][npm-version-href]
 [![License][license-src]][license-href]
@@ -7,15 +7,15 @@
 <!-- [![Circle CI][circle-ci-src]][circle-ci-href] -->
 <!-- [![Codecov][codecov-src]][codecov-href] -->
 
-> Show Tailwind CSS Breakpoints in Nuxtjs when using the [tailwindcss-module](https://github.com/nuxt-community/tailwindcss-module)
+> Show Tailwind CSS Breakpoints in Vuejs when using the [tailwindcss](https://github.com/tailwindcss/tailwindcss)
 
-<!-- [📖 **Release Notes**](./CHANGELOG.md) -->
+[📖 **Release Notes**](./CHANGELOG.md)
 
 ## Intro
 
-[DEMO](https://teamnovu.github.io/nuxt-breaky/)
+[DEMO](https://teamnovu.github.io/vue-breaky/)
 
-breaky helps you create your responsive designs faster. It extends the awesome [tailwindcss-module](https://github.com/nuxt-community/tailwindcss-module). breaky reads your defined breakpoints within your tailwind config and shows the currently active breakpoint based on your browser window width.
+breaky helps you create your responsive designs faster. It extends the awesome [tailwindcss](https://github.com/tailwindcss/tailwindcss). breaky reads your defined breakpoints within your tailwind config and shows the currently active breakpoint based on your browser window width.
 
 The plugin will only be loaded during development mode and does not interfere with your production build.
 
@@ -25,71 +25,23 @@ The plugin will only be loaded during development mode and does not interfere wi
 
 ## Requirements
 
-Make sure `tailwindcss-module: ^1.4.0` (or higher) is installed.
+Make sure `tailwindcss` is installed.
 
 ## Setup
 
-### Nuxt
-
-1. Add `nuxt-breaky` as a dev-dependency to your project
+1. Add `vue-breaky` as a dev-dependency to your project
 
 ```bash
-yarn add nuxt-breaky --dev
+yarn add vue-breaky --dev
 
-# or npm install nuxt-breaky --save-dev
-```
-
-2. Add `nuxt-breaky` to the `buildModules` section of `nuxt.config.js`
-
-NOTE: Use the `modules` section if you are using Nuxt older than `v2.9`. [More Info](https://nuxtjs.org/guide/modules/#build-only-modules)
-
-```js
-{
-  buildModules: [
-    // Simple usage
-    'nuxt-breaky',
-
-    // With options
-    [
-      'nuxt-breaky',
-      {
-        enabled: true,
-        enableInProd: false,
-        colorScheme: 'auto',
-        position: 'bottomRight'
-      }
-    ]
-  ]
-}
-```
-
-3. Add `exposeConfig: true` to the `tailwindcss` section of `nuxt.config.js`
-
-```js
-{
-  tailwindcss: {
-    exposeConfig: true
-  }
-}
-```
-
-NOTE: Please be aware this adds ~19.5KB (~3.5KB) to the client bundle size when you are in development mode. [More Info](https://github.com/nuxt-community/tailwindcss-module#referencing-in-javascript)
-
-### Vue
-
-1. Add `nuxt-breaky` as a dev-dependency to your project
-
-```bash
-yarn add nuxt-breaky --dev
-
-# or npm install nuxt-breaky --save-dev
+# or npm install vue-breaky --save-dev
 ```
 
 2. Add the following code to your `main.js`
 
 ```js
 import resolveConfig from 'tailwindcss/resolveConfig' // used to merge tailwindcss default config with your custom config
-import Breaky from 'nuxt-breaky/lib/plugin-vue'
+import Breaky from 'vue-breaky/lib/plugin-vue'
 
 Vue.use(Breaky, {
   tailwindConfig: resolveConfig(require('./tailwind.config')), // Required
@@ -111,23 +63,7 @@ No need to register or include it anywhere else.
 
 ### Configuration
 
-#### Nuxt
-
-You can pass options to the breaky using both the module options and the Nuxt config way.
-
-```js
-{
-  buildModules: {
-    ['nuxt-breaky', { /* module options */ }]
-  },
-
-  breaky: {
-    /* module options */
-  }
-}
-```
-
-#### Vue
+You can pass options to the breaky using the Vue plugin options.
 
 ```js
 Vue.use(Breaky, {
@@ -152,7 +88,7 @@ Vue.use(Breaky, {
 
 ### Release
 
-1. `yarn release:patch` (`minor` or `major`)
+1. `yarn release`
 2. `npm publish`
 
 ## License
@@ -163,13 +99,13 @@ Copyright (c) teamnovu
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-breaky/latest.svg?style=flat-square
-[npm-version-href]: https://github.com/teamnovu/nuxt-breaky/releases
-[npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-breaky.svg?style=flat-square
-[npm-downloads-href]: https://github.com/teamnovu/nuxt-breaky/releases
-[circle-ci-src]: https://img.shields.io/circleci/project/github/teamnovu/nuxt-breaky.svg?style=flat-square
-[circle-ci-href]: https://circleci.com/gh/teamnovu/nuxt-breaky
-[codecov-src]: https://img.shields.io/codecov/c/github/teamnovu/nuxt-breaky.svg?style=flat-square
-[codecov-href]: https://codecov.io/gh/teamnovu/nuxt-breaky
-[license-src]: https://img.shields.io/npm/l/nuxt-breaky.svg?style=flat-square
-[license-href]: https://github.com/teamnovu/nuxt-breaky/blob/master/LICENSE
+[npm-version-src]: https://img.shields.io/npm/v/vue-breaky/latest.svg?style=flat-square
+[npm-version-href]: https://github.com/teamnovu/vue-breaky/releases
+[npm-downloads-src]: https://img.shields.io/npm/dt/vue-breaky.svg?style=flat-square
+[npm-downloads-href]: https://github.com/teamnovu/vue-breaky/releases
+[circle-ci-src]: https://img.shields.io/circleci/project/github/teamnovu/vue-breaky.svg?style=flat-square
+[circle-ci-href]: https://circleci.com/gh/teamnovu/vue-breaky
+[codecov-src]: https://img.shields.io/codecov/c/github/teamnovu/vue-breaky.svg?style=flat-square
+[codecov-href]: https://codecov.io/gh/teamnovu/vue-breaky
+[license-src]: https://img.shields.io/npm/l/vue-breaky.svg?style=flat-square
+[license-href]: https://github.com/teamnovu/vue-breaky/blob/master/LICENSE
