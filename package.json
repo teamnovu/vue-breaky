@@ -18,7 +18,7 @@
   "main": "lib/plugin.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --config example/webpack.config.js --port 3000 --watch example/main.js",
-    "build": "webpack --config example/webpack.config.js --port 3000 example/main.js",
+    "build": "webpack --mode development --config example/webpack.config.js --port 3000 example/main.js",
     "lint": "eslint --ext .js,.vue example lib",
     "release": "yarn test && yarn update:gh-pages && standard-version && git push --follow-tags && npm publish",
     "release:patch": "yarn test && yarn update:gh-pages && standard-version --release-as patch && git push --follow-tags && npm publish",
