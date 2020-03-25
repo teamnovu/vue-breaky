@@ -29,19 +29,19 @@ Make sure `tailwindcss` is installed.
 
 ## Setup
 
-1. Add `vue-breaky` as a dev-dependency to your project
+1. Add `@teamnovu/vue-breaky` as a dev-dependency to your project
 
 ```bash
-yarn add vue-breaky --dev
+yarn add @teamnovu/vue-breaky --dev
 
-# or npm install vue-breaky --save-dev
+# or npm install @teamnovu/vue-breaky --save-dev
 ```
 
 2. Add the following code to your `main.js`
 
 ```js
 import resolveConfig from 'tailwindcss/resolveConfig' // used to merge tailwindcss default config with your custom config
-import Breaky from 'vue-breaky/lib/plugin-vue'
+import Breaky from '@teamnovu/vue-breaky/lib/plugin-vue'
 
 Vue.use(Breaky, {
   tailwindConfig: resolveConfig(require('./tailwind.config')), // Required
