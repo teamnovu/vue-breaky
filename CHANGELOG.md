@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/teamnovu/vue-breaky/compare/v0.1.0...v0.1.1) (2020-03-25)
+
+
+### Bug Fixes
+
+* gh-pages commit message ([16749aa](https://github.com/teamnovu/vue-breaky/commit/16749aa69d6c80a371b5363a61271d47f5ddf506))
+
 ## 0.1.0 (2020-03-24)
 
 
