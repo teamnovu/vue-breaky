@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/teamnovu/vue-breaky/compare/v0.1.1...v0.1.2) (2020-06-10)
+
+
+### Bug Fixes
+
+* drop dummy test ([287f3e0](https://github.com/teamnovu/vue-breaky/commit/287f3e0bd8e87364184e10cd5a598e29c2d4e603))
+* lint ([58986ac](https://github.com/teamnovu/vue-breaky/commit/58986ac6ef67a6704faced96a0a9d1b1fb5c57f1))
+
 ### [0.1.1](https://github.com/teamnovu/vue-breaky/compare/v0.1.0...v0.1.1) (2020-03-25)
 
 
