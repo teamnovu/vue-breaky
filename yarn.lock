@@ -1318,9 +1318,9 @@
     string-width "^2.0.0"
 
 "@teamnovu/vue-breaky-core@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@teamnovu/vue-breaky-core/-/vue-breaky-core-0.1.0.tgz#0a5b8d166c5ae775f716e6b15e90d5980012c527"
-  integrity sha512-8EVuCiJp4PWnDW9VcmWjVlnhwWh3Eu/sIupuPHrCvZeYVcdOZ+lZXOoW1KqmwA9MKz4fL89LinKt09FReuSZpg==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@teamnovu/vue-breaky-core/-/vue-breaky-core-0.1.4.tgz#d8e8a105fff5ae09b75d1c2cb4761c17ebd5b234"
+  integrity sha512-Jx/Kc1/YnhabR9GZ4CqCCcM4tQWvdQq3ES4Mefxo0CeyOCWsCY/GM1XV1T13gCAgR5ALTmCrjDh5+YyJWrkWMg==
   dependencies:
     interactjs "^1.9.7"
     lodash "^4.17.15"
